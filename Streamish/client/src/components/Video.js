@@ -17,7 +17,6 @@ const Video = ({ video }) => {
           <strong>{video.title}</strong>
         </p>
         <p>{video.description}</p>
-        
       </CardBody>
     </Card>
   );

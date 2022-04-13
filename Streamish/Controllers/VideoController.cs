@@ -64,5 +64,11 @@ namespace Streamish.Controllers
             var videos = _videoRepository.GetAllWithComments();
             return Ok(videos);
         }
+
+        [HttpGet("search")]
+        public IActionResult Search(string q, bool sortDesc)
+        {
+            return Ok(_videoRepository.Search(q, sortDesc));
+        }
     }
 }
